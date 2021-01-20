@@ -2,6 +2,19 @@
 @{
     ViewData["Title"] = "Startsida";
 }
+<h2 id="index-h2">Hello EarthCat</h2>
+<img class="earth-img"src="images/earthCat.png" />
+
 <button class="show-hide"id="index-btn" onclick="byeCat()">Goodbye SpaceCat</button>
-<img class="top-img show-hide"src="images/space-cat-big.jpg" alt="Cat in space"/>
-<img class="bottom-img show-hide"src="images/space-big.jpg" alt="Space"/>
+<picture>
+    <source media="(min-width:800px)" class="top-img show-hide" srcset="images/space-cat-big.jpg" alt="Cat in space">
+    <source media="(max-width:800px)" class="top-img show-hide" srcset="images/space-cat.jpg" alt="Cat in space">
+    <img class="top-img show-hide" src="images/space-cat-big.jpg" alt="Cat in space" />
+</picture>
+<picture>
+    <source media="(min-width:800px)" class="bottom-img show-hide" srcset="images/space-big.jpg" alt="Space">
+    <source media="(max-width:800px)"  class="bottom-img show-hide" srcset="images/space.jpg" alt="Space">
+    <img class="bottom-img show-hide" src="images/space-big.jpg" alt="Cat in space" />
+</picture>
+
+ 

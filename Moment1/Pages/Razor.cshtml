@@ -23,7 +23,7 @@ Datum/Klockslag:  @DateTime.Now
 <h3>
     Kurser jag läst:
 </h3>
-<ul>
+<ul class="courses">
 @{
     string[] courses = {
         "DT057G, Webbutveckling I",
@@ -42,7 +42,7 @@ Datum/Klockslag:  @DateTime.Now
 
     @foreach (var course in courses)
     {
-        <li>@course</li>
+    <li><span class="course-list">@course</span></li>
     }
 }
 </ul>
