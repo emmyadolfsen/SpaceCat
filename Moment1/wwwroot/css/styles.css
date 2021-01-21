@@ -35,8 +35,9 @@ header img {
 
 }
 button {
+    border: medium none;
     position: absolute;
-    top: 100px;
+    top: 150px;
     z-index: 20;
     background-color: #00353b;
     color: white;
@@ -46,12 +47,21 @@ button {
     margin-left: auto;
     margin-right: auto;
     font-size: 25px;
+    box-shadow: 2px 3px 8px #026873, 2px 3px 8px #026873 inset;
+    padding: 0.8rem 0.5rem;
 }
+    button:hover {
+        color: #f26a4b;
+        text-shadow: #533d4a 1px 1px, #533d4a 2px 2px, #533d4a 3px 3px;
+        box-shadow: 3px 3px 15px #026873, 3px 3px 15px #026873 inset;
+    }
+    button:focus {
+        box-shadow: 1px 2px 3px #026873, 1px 2px 3px #026873 inset;
+        outline: none;
+        text-shadow: none;
+    }
 .byeCat {
     display: none;
-}
-button:focus {
-    outline: none;
 }
 .date {
     float: right;
@@ -61,10 +71,10 @@ main {
     width: 100%;
     max-width: 900px;
 }
-main p a {
-    color: black;
-
-}main p a:visited {
+    main p a {
+        color: #026873;
+        ;
+    }main p a:visited {
     color: black;
 }
 
